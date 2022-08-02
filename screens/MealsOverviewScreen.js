@@ -20,15 +20,21 @@ function MealsOverviewScreen({ route, navigation }) {
     });
   }, [catId, navigation]);
 
+  // function pressHandler() {
+  //   navigation.navigate('MealDetail');
+  // }
+
   function renderMealItem(itemData) {
     const item = itemData.item;
     const mealItemProps = {
+      id: item.id,
       title: item.title,
       imageUrl: item.imageUrl,
       duration: item.duration,
       complexity: item.complexity,
       affordability: item.affordability,
     };
+    // return <MealItem {...mealItemProps} onPress={pressHandler} />;
     return <MealItem {...mealItemProps} />;
   }
 
