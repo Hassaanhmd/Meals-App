@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import MealDetails from './MealDetails';
-import Meal from '../models/meal';
+import MealDetails from '../../components/MealDetails';
+import Meal from '../../models/meal';
 
 function MealItem({
   id,
